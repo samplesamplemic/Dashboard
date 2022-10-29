@@ -67,7 +67,7 @@ export function YoutubeNews() {
   if (!data) return <div>loading...</div>;
 
   return (
-    <div className="max-h-[50rem] flex flex-col items-center mt-9 glass-component relative">
+    <div className="max-w-[900px] max-h-[50rem] flex flex-col items-center mt-9 glass-component md:flex-[50%] relative">
       {segnalibri && (
         <div className="mb-6 flex justify-center flex-wrap gap-2 static">
           <button onClick={toggle} className="btn">

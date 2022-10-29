@@ -36,7 +36,7 @@ const Todo = (props) => {
         <form
           action=""
           onSubmit={handleSubmit(onSubmit)}
-          className=" flex flex-col sm:h-full sm:justify-between"
+          className=" flex flex-col smaller:h-full smaller:justify-between"
         >
           <div className="mb-2">
             <label htmlFor="todos">
@@ -61,7 +61,7 @@ const Todo = (props) => {
             <img
               src={preview}
               alt=""
-              className="w-20 h-20 rounded-md mb-2 sm:hidden"
+              className="w-20 h-20 rounded-md mb-2 smaller:hidden"
             />
 
             <label htmlFor="description" className="w-full">
@@ -76,7 +76,7 @@ const Todo = (props) => {
             <label htmlFor="image">
               <input
                 type="file"
-                className="rounded-md mb-4 w-24 sm:hidden"
+                className="rounded-md mb-4 w-24 smaller:hidden"
                 onChangeCapture={(e) => handlePreview(e)}
                 {...register("image")}
               />

@@ -3,7 +3,7 @@ import { mdiControllerClassic } from "@mdi/js";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Productivity from "./Productivity";
 import App from "./App";
-import { NewsArea } from "./news/news_area";
+import { NewsArea } from "./news_area";
 
 const Sidebar = () => {
   return (

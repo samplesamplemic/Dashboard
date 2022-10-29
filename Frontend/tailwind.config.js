@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode: 'jit',
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
@@ -21,7 +22,12 @@ module.exports = {
       },
     },
     screens: {
-      sm: { max: "469px" },
+      sm: { min: "640px" },
+      md: { min: "768px" },
+      lg: { min: "1024px" },
+      xl: { min: "1280px" },
+      "2xl": { min: "1536px" },
+      smaller: { max: "469px" },
       big: { max: "1000px" },
       // => @media (max-width: 639px) { ... }}
     },

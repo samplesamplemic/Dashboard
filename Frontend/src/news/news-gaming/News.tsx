@@ -30,7 +30,7 @@ export function News() {
   if (!data) return <div>loading...</div>;
 
   return (
-    <div className="max-h-[50rem] flex flex-col items-center mt-9 glass-component">
+    <div className="max-w-[900px] max-h-[50rem] flex flex-col items-center mt-9 glass-component md:flex-[50%]">
       <div className="w-full flex justify-center flex-wrap mb-6 md:flex-nowrap gap-2 static">
         {testate &&
           testate.map((testata: any) => (

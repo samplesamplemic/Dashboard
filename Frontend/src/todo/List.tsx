@@ -73,7 +73,7 @@ const List = () => {
                       }
                     />
                     <input
-                      className="sm:w-[80%] self-center p-1 peer-checked:bg-green-300 peer-checked:line-through peer-checked:transition-all duration-[250ms] font-medium text-lg rounded-md"
+                      className="smaller:w-[80%] self-center p-1 peer-checked:bg-green-300 peer-checked:line-through peer-checked:transition-all duration-[250ms] font-medium text-lg rounded-md"
                       defaultValue={el.attributes.title}
                       placeholder="todo..."
                       disabled={show && id == el.id ? false : true}
@@ -83,10 +83,10 @@ const List = () => {
                     />
                   </div>
                   <div className="btn-sm flex ">
-                    {/* sm:flex-col */}
+                    {/* smaller:flex-col */}
                     <button
                       className=" min-w-[1.7rem] h-6 pr-1 border-r border-white "
-                      // sm:p-0 sm:border-r-0
+                      // smaller:p-0 smaller:border-r-0
                       onClick={() =>
                         update(
                           "DELETE",
@@ -120,7 +120,7 @@ const List = () => {
                       <img
                         src={el.attributes.image}
                         alt=""
-                        className="rounded-md w-20 h-20 sm:hidden"
+                        className="rounded-md w-20 h-20 smaller:hidden"
                       />
                     ) : null}
                     {show && id == el.id ? (
@@ -128,13 +128,13 @@ const List = () => {
                         <img
                           src={preview}
                           alt="preview"
-                          className="w-20 h-20 rounded-md mb-2 sm:hidden"
+                          className="w-20 h-20 rounded-md mb-2 smaller:hidden"
                         />
 
                         <label htmlFor="image">
                           <input
                             type="file"
-                            className="rounded-md mb-4 w-24 sm:hidden"
+                            className="rounded-md mb-4 w-24 smaller:hidden"
                             onChangeCapture={(e) => handlePreview(e)}
                           />
                         </label>
@@ -142,7 +142,7 @@ const List = () => {
                     ) : null}
                     <label
                       htmlFor="description"
-                      className="w-[calc(100%-5.5rem)] sm:w-full"
+                      className="w-[calc(100%-5.5rem)] smaller:w-full"
                     >
                       <textarea
                         placeholder="description..."

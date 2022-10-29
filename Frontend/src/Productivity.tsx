@@ -8,7 +8,7 @@ import RenderTimer from "./timer/RenderTimer";
 const Productivity = () => {
   return (
     <>
-      <div className="flex grow flex-wrap big:flex-col gap-4 m-auto pb-4 justify-center gap-16">
+      <div className="flex grow flex-wrap big:flex-col m-auto pb-4 justify-center gap-16">
         <div className="overflow-hidden">
           <div className="w-fit m-auto pt-4  glass-component !p-3 big:w-[95%]">
             {/* sm:w-80 */}

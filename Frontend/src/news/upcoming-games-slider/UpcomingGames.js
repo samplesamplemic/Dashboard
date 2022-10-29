@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import axios from "axios";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -12,11 +12,13 @@ import "tailwindcss/tailwind.css"
 export function UpcomingGames() {
     const [data, setData] = useState([])
 
+    const fetching = useMemo(() => axios.all(upcomingGamesUrl().map(el => axios.get(el))).then(axios.spread(function (...res) {
+        const key = "released";
+        setData([...new Map((res.map(el => Object.values(el.data.results)).flat(1)).map(item => [item[key], item])).values()])
+    })), []);
+
     useEffect(() => {
-        axios.all(upcomingGamesUrl().map(el => axios.get(el))).then(axios.spread(function (...res) {
-            const key = "released";
-            setData([...new Map((res.map(el => Object.values(el.data.results)).flat(1)).map(item => [item[key], item])).values()])
-        }))
+        fetching
     }, []);
 
     const newArray = data.map(el => [(el.name), (el.released), (el.platforms), (el.genres.map(subEl => subEl.name)), (el.background_image)])
@@ -67,9 +69,9 @@ export function UpcomingGames() {
     }
 
     return (<>
-        <div className="bg flex flex-col items-center">
+        <div className="flex flex-col items-center">
             {/* <h2 className="text-2xl font-bold text-white flex-[100%]">Upcoming Games</h2> */}
-            <Slider className="slider" {...settings}>
+            <Slider className="slider big:!w-[96%]" {...settings}>
                 {newArray.map((item, index) =>
                     <div key={index}>
                         <div className="rounded-tr-3xl rounded-bl-3xl rounded-br-lg rounded-tl-lg border border-white mt-2.5 mb-2.5 h-130px"
@@ -107,6 +109,7 @@ const settings = {
                 slidesToShow: 5,
                 slidesToScroll: 4,
                 infinite: true,
+                dots: false
             }
         },
         {
