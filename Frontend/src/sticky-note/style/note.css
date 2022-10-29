@@ -1,0 +1,10 @@
+.note-show {
+  /* display: none; */
+  opacity: 0;
+  transition: opacity 0.33s ease-in-out;
+}
+
+/* apply effect on note template button */
+.btn-notes {
+  background: center;
+}

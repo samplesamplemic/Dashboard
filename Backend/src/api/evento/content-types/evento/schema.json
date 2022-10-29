@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "eventi",
+  "info": {
+    "singularName": "evento",
+    "pluralName": "eventi",
+    "displayName": "Eventi"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titolo": {
+      "type": "string"
+    },
+    "oraInizio": {
+      "type": "string"
+    },
+    "oraFine": {
+      "type": "string"
+    },
+    "tuttoGiorno": {
+      "type": "boolean"
+    },
+    "colore": {
+      "type": "string"
+    }
+  }
+}

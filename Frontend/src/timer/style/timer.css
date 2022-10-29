@@ -1,0 +1,34 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+}
+
+.main-container {
+    /* height: 100vh; */
+/* background: linear-gradient(180deg, #C3B5AA 0%, #504C54 100%);
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px); 
+} */
+
+/* .card-container {
+    display: flex;
+    align-items: flex-start;
+    background: linear-gradient(118.15deg, rgba(255, 255, 255, 0.1) 17.42%, rgba(255, 255, 255, 0.025) 68.14%);
+    box-shadow: 0px 4px 24px -1px rgb(0 0 0 / 20%);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+
+.card-items {
+} */
+
+.card-options {
+  color: #f2efe6;
+  font-weight: 900;
+}
