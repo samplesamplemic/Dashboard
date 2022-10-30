@@ -1,5 +1,7 @@
 import Icon from "@mdi/react";
+import { mdiBriefcase } from "@mdi/js";
 import { mdiControllerClassic } from "@mdi/js";
+import { mdiCalendarEdit } from "@mdi/js";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Productivity from "./Productivity";
 import App from "./App";
@@ -146,7 +148,7 @@ const Sidebar = () => {
             >
               <Icon
                 className="w-8"
-                path={mdiControllerClassic}
+                path={mdiBriefcase}
                 size={2}
                 vertical
                 horizontal
@@ -167,7 +169,7 @@ const Sidebar = () => {
             </Link>
             <button className=" btn-notes btn !rounded-full active:cursor-grabbing !p-[0.11rem] border-none">
               <Icon
-                path={mdiControllerClassic}
+                path={mdiCalendarEdit}
                 size={2}
                 vertical
                 horizontal
