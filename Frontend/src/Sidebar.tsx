@@ -144,7 +144,7 @@ const Sidebar = () => {
           <div className="flex flex-col justify-center gap-24 items-center h-full big:flex-row big:gap-8 big:mr-1">
             <Link
               to="/productivity"
-              className=" btn-notes btn !rounded-full active:cursor-grabbing !p-[0.11rem] border-none"
+              className=" btn-notes btn !rounded-full active:cursor-grabbing !p-[0.5rem] border-none"
             >
               <Icon
                 className="w-8"
@@ -157,7 +157,7 @@ const Sidebar = () => {
             </Link>
             <Link
               to="/news"
-              className=" btn-notes btn !rounded-full active:cursor-grabbing !p-[0.11rem] border-none"
+              className=" btn-notes btn !rounded-full active:cursor-grabbing !p-[0.5rem] border-none"
             >
               <Icon
                 path={mdiControllerClassic}
@@ -167,7 +167,7 @@ const Sidebar = () => {
                 rotate={180}
               />
             </Link>
-            <button className=" btn-notes btn !rounded-full active:cursor-grabbing !p-[0.11rem] border-none">
+            <button className=" btn-notes btn !rounded-full active:cursor-grabbing !p-[0.5rem] border-none">
               <Icon
                 path={mdiCalendarEdit}
                 size={2}
