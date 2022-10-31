@@ -45,7 +45,7 @@ const Notes = (props: any) => {
             //     console.log(e.target);
             //   }
             // }}
-            className=" pls ml-4 absolute mt-[-2.9rem] left-48 min-w-[10rem] min-h-[11rem] max-w-[11rem] max-h-[15rem] flex flex-col rounded-md overflow-hidden"
+            className=" pls ml-0 absolute mt-[-2.9rem] left-48 min-w-[10rem] min-h-[11rem] max-w-[11rem] max-h-[15rem] flex flex-col rounded-md overflow-hidden"
           >
             <div className=" !w-full !p-1 justify-end flex gap-2 bg rounded-b-none !min-h-fit">
               <button

@@ -5,7 +5,7 @@ import Productivity from "./Productivity";
 function App() {
   return (
     <>
-      <div className="flex bg gap-4 big:flex-col ">
+      <div className="flex bg gap-4 big:flex-col !w-full ">
         {/* big:w-[100vw] h-[100vh] */}
         <Sidebar />
         {/* <Productivity /> */}

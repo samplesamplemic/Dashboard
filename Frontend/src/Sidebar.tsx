@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Productivity from "./Productivity";
 import App from "./App";
 import { NewsArea } from "./news_area";
+import FullCalendar from "./FullCalendar";
 
 const Sidebar = () => {
   return (
@@ -167,7 +168,10 @@ const Sidebar = () => {
                 rotate={180}
               />
             </Link>
-            <button className=" btn-notes btn !rounded-full active:cursor-grabbing !p-[0.5rem] border-none">
+            <Link
+              to="/calendar"
+              className=" btn-notes btn !rounded-full active:cursor-grabbing !p-[0.5rem] border-none"
+            >
               <Icon
                 path={mdiCalendarEdit}
                 size={2}
@@ -175,12 +179,13 @@ const Sidebar = () => {
                 horizontal
                 rotate={180}
               />
-            </button>
+            </Link>
           </div>
         </div>
         <Routes>
           <Route path="/productivity" element={<Productivity />}></Route>
           <Route path="/news" element={<NewsArea />}></Route>
+          <Route path="/calendar" element={<FullCalendar />}></Route>
         </Routes>
       </Router>
     </>

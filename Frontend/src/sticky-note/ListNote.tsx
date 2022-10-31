@@ -28,18 +28,18 @@ const ListNote = () => {
 
   return (
     <>
-      <div className="flex mb-4 ">
+      <div className="flex flex-col mb-4 ">
         {/* <div className="">  */}
         <button
           onClick={() => handleShow()}
-          className=" btn  "
+          className=" btn !w-fit "
           data-bs-toggle="tooltip"
           data-bs-placement="right"
           title="Show/Hide Notes"
         >
           Notes
         </button>
-        <div className=" find w-fit relative mx-[4rem] ">
+        <div className=" find w-fit relative ">
           {note?.data.map((el: any) => {
             return (
               <div key={el.id}>

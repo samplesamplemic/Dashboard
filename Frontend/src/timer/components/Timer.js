@@ -17,7 +17,7 @@ const Timer = ({
   const options = ["Pomodoro", "Short Break", "Long Break"];
 
   return (
-    <div className="glass-component big:w-[95%] m-auto">
+    <div className="glass-component big:w-[95%] m-auto smaller:p-3">
       {/* main-container  */}
       <div className="card-container">
         <div className="card-items w-10/12 mx-auto pb-5 text-black flex flex-col justify-center items-center relative !p-5">
@@ -48,15 +48,15 @@ const Timer = ({
               {getTickingTime()}:{seconds.toString().padStart(2, "0")}
             </h1>
           </div>
-          <div className="flex gap-20 items-center">
+          <div className="flex gap-20 smaller:gap-8 items-center">
             <button
-              className="px-16 py-1 text-2xl rounded-md bg-primary-dark text-secondary-light uppercase font-bold"
+              className="px-16 smaller:px-4 py-1 text-2xl rounded-md bg-primary-dark text-secondary-light uppercase font-bold"
               onClick={startTimer}
             >
               {ticking ? "Stop" : "Start"}
             </button>
             <button
-              className="px-16 py-1 text-2xl rounded-md bg-primary-dark text-secondary-light uppercase font-bold"
+              className="px-16 smaller:px-4 py-1 text-2xl rounded-md bg-primary-dark text-secondary-light uppercase font-bold"
               onClick={reset}
             >
               Reset
