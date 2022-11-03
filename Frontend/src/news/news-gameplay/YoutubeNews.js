@@ -36,7 +36,7 @@ export function YoutubeNews() {
     if (type === "DELETE") {
       fetch(`//localhost:1337/api/segnalibros/${segnalibro.id}`, {
         method: "DELETE",
-      }).then(setTimeout(fetchSet, 300));
+      }).then(setTimeout(fetchSet, 500));
       return;
     }
     fetch("//localhost:1337/api/segnalibros", {
@@ -46,7 +46,7 @@ export function YoutubeNews() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ data: segnalibro }),
-    }).then(fetchSet());
+    }).then(setTimeout(fetchSet, 500));
   }
 
   useEffect(() => {

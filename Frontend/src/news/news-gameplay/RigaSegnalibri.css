@@ -1,6 +1,7 @@
 .glass-opaco {
-    background: linear-gradient(118.15deg,
+  background: linear-gradient(
+    118.15deg,
     rgba(255, 255, 255, 1) 17.42%,
-    rgba(255, 255, 255, .8) 68.14%
-  );
+    rgba(255, 255, 255, 0.8) 68.14%
+  ) !important;
 }
