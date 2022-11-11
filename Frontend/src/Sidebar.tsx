@@ -183,6 +183,20 @@ const Sidebar = () => {
           </div>
         </div>
         <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <div className="w-full flex flex-col justify-center items-center">
+                  <div className="flex flex-col justify-center items-center text-white glass-component">
+                    <h1 className="text-4xl bold ">Dashboard || Team 2</h1>
+                    <br />
+                    <p className="text-3xl">Welcome</p>
+                  </div>
+                </div>
+              </>
+            }
+          ></Route>
           <Route path="/productivity" element={<Productivity />}></Route>
           <Route path="/news" element={<NewsArea />}></Route>
           <Route path="/calendar" element={<FullCalendar />}></Route>
